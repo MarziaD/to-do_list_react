@@ -4,18 +4,12 @@ import PropTypes from 'prop-types';
 export class TodoItem extends Component { 
   getStyle = () => {
     return {
-      background: '#f4f4f4',
+      background: '#bfd9d9',
       padding: '10px',
       borderBottom:'1px #ccc dotted',
-      textDecoration: this.props.todo.completed ? 'line-through': 
-      'none'
-    }  
-  }
-
-  markComplete = (e) => {
-    
-
-  }
+      textDecoration: this.props.todo.completed ? 'line-through': 'none'
+    };  
+  };
 
   render () { 
     const { id, title } = this.props.todo;
@@ -30,7 +24,7 @@ export class TodoItem extends Component {
         </div>
     
 
-    )
+    );
   }
 }
 
@@ -42,7 +36,7 @@ TodoItem.propTypes = {
 }
 
 const btnStyle = {
-  background: '#ff0000',
+  background: '#000000',
   color: '#fff',
   border: 'none',
   padding: '5px 9px',
